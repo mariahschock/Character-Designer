@@ -17,7 +17,7 @@ let headCount = 0;
 let middleCount = 0;
 let bottomCount = 0;
 
-let catchphrases = [];
+let catchphrase = [];
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
@@ -74,9 +74,13 @@ function displayCatchphrases() {
     // clear out the DOM for the currently displayed catchphrases
 
     // loop through each catchphrase in state
-   
+
     // and for each catchphrase
-    
+    for (let catchphrase of catchphrase) {
+        const catchList = document.createElement('div');
+        catchphrasesEl.appendChild(catchList);
+        catchList
+    }
     // create an HTML element with the catchphrase as its text content
     
     // and append that HTML element to the cleared-out DOM
